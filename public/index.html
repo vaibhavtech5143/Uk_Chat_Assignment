@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Social Media App</h1>
+    <div id="tabs">
+        <button class="tab-button" onclick="showTab('login')">Login</button>
+        <button class="tab-button" onclick="showTab('register')">Register</button>
+        <div id="auth-controls">
+            <button id="logoutButton" style="display: block;">Logout</button>
+        </div>
+    </div>
+    <div id="forms">
+        <!-- Login Form -->
+        <div id="login-form" class="form-content">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginButton">Login</button>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-content" style="display: block;">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Username">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button id="registerButton">Register</button>
+        </div>
+    </div>
+
+    <!-- Content Area -->
+     <div>
+<h1>Comments Done By This User</h1>
+         <div id="content"></div>
+     </div>
+
+    <!-- Comment Section -->
+    <div id="comment-section">
+        <h2>Add a Comment</h2>
+        <input type="text" id="postId" placeholder="Post ID">
+        <textarea id="commentText" placeholder="Enter your comment"></textarea>
+        <button id="postComment">Post Comment</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
